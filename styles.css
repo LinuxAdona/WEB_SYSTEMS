@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.title {
+    margin: 10px;
+    text-align: center;
+}
+
+.calendar {
+    padding: 0 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.calendar .month {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 20vw;
+}
+
+.calendar .month th {
+    width: 100%;
+    border: 1px solid;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.calendar .month th:has(h1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.calendar .month img {
+    height: 199px;
+}
+
+.calendar .month th:not(:last-child) {
+    border-right: none;
+}
+
+.calendar .month:not(:last-child) th {
+    border-bottom: none;
+}
+
+.calendar .week {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calendar .week th,
+.calendar .week td {
+    border: 1px solid;
+    width: 14.2%;
+    min-width: 29px;
+    height: 29px;
+    text-align: center;
+}
+
+.calendar .week th {
+    font-weight: bold;
+}
+
+.calendar .week tr {
+    margin-bottom: 2px;
+}
+
+.calendar .week td {
+    font-weight: 500;
+}
